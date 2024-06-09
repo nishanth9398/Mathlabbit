@@ -1,0 +1,11 @@
+from sympy import
+
+x,y,z,a,b,c=symbols(x,y,z,a,b,c')
+
+A=Integral (1, (z, 0, c*(1-(x/a)-(y/b))), (y,0,b*(1-(x/a))), (x,0,a))
+
+display(A)
+
+A1=integrate (1, (z,0,c*(1-(x/a)-(y/b))), (y,0,b*(1-(x/a))), (x,0,a))
+
+display(A1)
