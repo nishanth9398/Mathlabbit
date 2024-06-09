@@ -1,0 +1,27 @@
+from sympy import *
+
+x,y=symbols('x,y')
+
+f=2*y+3*exp(x)
+
+x0=float(input('Enter the initial value of x:'))
+
+yo=float(input('Enter the initial value of y:'))
+
+h=float(input('Enter the value for step length h ='))
+
+3/10
+
+4
+
+k1=h*f.subs({x:x0, y:y0})
+
+k2=h*f.subs({x:x0+(h/2), y:y0+(k1/2)})
+
+k3=h*f.subs({x:x0+(h/2), y:y0+(k2/2)})
+
+k4=h*f.subs({x:x0+h, y:y0+k3})
+
+solution=y0+(1/6)*(k1+(2*k2)+(2*k3)+k4)
+
+print('\nk1 = %0.4f'%k1, '\tk2 = %0.4f'%k2, '\tk3 = %0.4f'%k3, '\tk4 = %0.4f'9 print(f'y({x0+h})=%0.4f'%solution)
