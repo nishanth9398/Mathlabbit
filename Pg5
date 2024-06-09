@@ -1,0 +1,23 @@
+from sympy physics vector import *
+
+from sympy import *
+
+x,y,z=symbols('x,y,z')
+
+V= ReferenceFrame ('v')
+
+Δφ=x**2*y+y**2*z+z**2*x
+
+print ("\n Gradient of is")
+
+Δφ=display (Derivative (φ,x)*v.x+Derivative (φ,y)*v.y+Derivative (y,z)*v
+
+gradφ==diff(φ,x)*v.x+diff(φ,y)*v.y+diff(φ,z)*v.z
+
+display(gradφ)
+
+NV=gradφ.subs({x:1,y:1,z:1})
+
+print('Normal vector to the suface is')
+
+display (NV)
