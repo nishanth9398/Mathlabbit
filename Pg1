@@ -1,0 +1,30 @@
+Python Program to d/dx (y) = 2y + 3e ^ 3 , y(0) = 0at x=0.1 using Taylor's series method considering terms up to 4th degree.
+
+from sympy import x,y=symbols('x,y')
+
+f=2*y+3*exp(x)
+
+x0=float(input('Enter the initial value for x:'))
+
+yo=float(input('Enter the initial value for y:'))
+
+n=int(input('Enter the number of terms required in the series: '))
+
+print('y1 = %0.4f'%f.subs({x:x0, y:y0}))
+
+series=y0+(x-x0) (f.subs({x:x0, y:ye}))
+
+dy=f
+
+for i in range (2,n):
+
+dy=diff(dy,x)+diff(dy,y)*f
+
+dy=dy.subs({x:x0,y:y0}) print(f'y{i} = %0.4f%dye)
+
+series-series+((((x-x0)**i)*dye)/factorial(i))
+
+display(series)
+
+xvalue=float(input('Enter the value of x at which we have to find y:
+print(f'y({xvalue}) = %0.4f'%series.subs({x:xvalue, y:y0}))
