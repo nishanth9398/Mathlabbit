@@ -1,0 +1,31 @@
+from sympy physics vector import *
+
+from sympy import *
+
+x,y,z=symbols('x,y,z')
+
+V= ReferenceFrame ('v')
+
+f1=-(x**2)+y*z
+
+f2=-(z**2)+4*y
+
+f3=2*x*z-4*z
+
+f=f1*v.x+f2*v.y+f3*v.z
+
+print ("\n Divergence of the vector fis")
+
+display (Derivative (f1,x)+Derivative (f2,y)+Derivative (f3,z))
+
+divf=diff(f1,x)+diff(f2,y)+diff(f3,z)
+
+display(divf)
+
+if divf==0:
+
+print('The vector f is solenoidal')
+
+
+else: 
+    print('The vector f is not solenoidal')
