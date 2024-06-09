@@ -1,0 +1,28 @@
+from sympy import*
+
+n=float(input('Enter the value of n to find (n):'))
+
+m=float(input('Enter the value of m to find ẞ(m,n):'))
+
+gn=gamma(n)
+
+gm=gamma(m) 
+gmn=gamma(m+n)
+
+print(f'r({m})=%0.4f'%gm, f'\nr({n})=%0.4f'%gn, f'\nr({m}+{n})=%0.4f'%gmn)
+
+bmn=round(beta(m,n),4)
+
+print(f'β({m},{n})=%0.4f'%bmn)
+
+rhs=round((gn*gm)/gmn,4)
+
+print('R.H.S= %0.4f'%rhs)
+
+if bmn==rhs:
+
+         print('β(m,n)=(r(m)*r(n))/(m+n)')
+
+else:
+
+    print('β(m,n)!=(۲(m)*(n))/(m+n)')
