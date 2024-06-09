@@ -1,0 +1,12 @@
+from sympy import *
+
+x,y=symbols('x,y')
+
+f=(x**3)*y
+
+I=Integral (f, (x, 0, sqrt(1-y**2)), (y,0,1))
+
+display(I)
+
+I=integrate(f, (x, 0, sqrt(1 - y**2) ). (y,0,1)) 
+print('I=',I)
