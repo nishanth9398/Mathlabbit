@@ -1,0 +1,59 @@
+from sympy import *
+
+x,y=symbols ('x,y')
+
+f=2*exp(x)+y
+
+h=float(input('Enter the value for step length h = '))
+
+print('Enter the values for x and y')
+
+x0=float(input('x0 = '))
+
+x1=x0+h
+
+x2=x 1 + h
+
+x3=x 2 + h
+
+x4=x3 + h
+
+yo=float(input('yê:'))
+
+y1=float(input('y1: '))
+
+y2=float(input('y2:'))
+
+y3=float(input('y3:'))
+
+f1 = 1 f.subs({x:x1,y:y1})
+
+f2=f.subs({x:x2,y:y2})
+
+f3f.subs({x:x3,y:y3})
+
+y4p=y0+((4*h)/3)*(2*f1-f2+2*f3)
+
+print(f'\nFrom Milnes Predictor formula y({x4})=%0.4f'%y4p)
+
+f4=f.subs({x:x4, y:y4p})
+
+yc = 0
+
+i = 1
+
+print('\nFrom Milnes Corrector formula')
+
+while i<= 3
+
+y4c=y2+(h/3)*(f2+4*f3+f4)
+
+dif=abs(y4c-ус)
+
+yc = y4c
+
+print(f'{i} Iteration: y({x4})=%0.4f'%y4c)
+
+f 4 = f . subs({x:x4, y:y4c))
+
+i+=1
