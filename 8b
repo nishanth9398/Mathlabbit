@@ -1,0 +1,10 @@
+from sympy import *
+
+x,y,a=symbols('x,y,a')
+
+A=Integral (1, (y, x**2/(4*a), 2*sqrt(a*x)), (x,0,4*a))
+
+display(A)
+
+A1=integrate (1, (y, x**2/(4*a), 2*sqrt(a*x)), (x,0,4*a)) 
+display(A1)
