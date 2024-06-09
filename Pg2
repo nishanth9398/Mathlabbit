@@ -1,0 +1,30 @@
+from sympy import
+
+x,y=symbols('x,y')
+
+f=x+sin(y)
+
+x0=float(input('Enter the initial value for x:'))
+
+ye=float(input('Enter the initial value for y:')) h=float(input('Enter the step lenght h'))
+
+2/10
+
+n=int(input('Enter the number of iteration required in Modified Eulers M m=int(input('Enter the total number of values of x at which y should be for i in range (1,m+1):
+
+yE=y0+h*f.subs({x:x0, y:ye})
+
+x1=x0+h
+
+YME=YE
+
+print('\nFrom Eulers Method y =%0.4f'%yE)
+
+print('\nFrom Modified Eulers Method')
+
+for j in range (1,n+1):
+
+yME=y0+(h/2)*(f.subs({x:x0, y:ye))+f.subs({x:x1,y:yME))) print(f'{j} Iteration y = %0.4f'%yME)
+
+x0=x1
+y0=yME
