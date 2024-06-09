@@ -1,0 +1,28 @@
+from sympy physics vector import
+
+from sympy import
+
+y,z=symbols('x,y,z')
+
+v= ReferenceFrame ('v')
+
+f1=x**2*y*z
+
+f2=x*y**2*z
+
+f3=x*y*z**2
+
+f=f1*v.x+f2*v.y+f3*v.z 
+print("curl of fis")
+
+display((Derivative (f3,y)-Derivative (f2,z)) *v.x-(Derivative(f3,x)-Derivative
+curlf=(diff(f3,y)-diff(f2,z)) v.x-(diff(f3,x)-diff(f1,z))*v.y+(diff(f2,x)-c
+
+display (curlf) 
+if curlf==0:
+
+           print('The vector f is Irrotational')
+
+else:
+
+     print('The vector f is not Irrotational')
