@@ -1,0 +1,11 @@
+from sympy import*
+
+x,y=symbols ('x,y')
+
+A=Integral (1, (y,x**2,x), (x,0,1))
+
+display(A)
+
+Al=integrate (1, (y,x**2,x), (x,0,1))
+
+display(A1)
